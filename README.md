@@ -38,8 +38,36 @@ Surfpool CLI: surfpool 0.12.0
 Node.js: v24.10.0
 Yarn: 1.22.1
 ```
-
 Verify a successful installation by checking the version of each installed dependency.
 ```bash
 rustc --version && solana --version && anchor --version && surfpool --version && node --version && yarn --version
+```
+
+### 3️⃣ Solana config
+Your Solana config specifies the following variables:
+
+Config file: The path to your config file
+RPC URL & Websocket URL: The Solana cluster to which the CLI makes requests
+Keypair path: The path to the default Solana wallet (keypair) used to pay transaction fees and deploy programs. By default, this file is stored at ~/.config/solana/id.json.
+To see your current configuration settings, enter the follow command in your terminal.
+
+```
+solana config get
+```
+A successful command will return output similar to the following:
+
+Example output
+```
+Config File: /Users/test/.config/solana/cli/config.yml
+RPC URL: https://api.mainnet-beta.solana.com
+WebSocket URL: wss://api.mainnet-beta.solana.com/ (computed)
+Keypair Path: /Users/test/.config/solana/id.json
+Commitment: confirmed
+```
+You can change the Solana CLI cluster with the following commands:
+```
+solana config set --url mainnet-beta
+solana config set --url devnet
+solana config set --url localhost
+solana config set --url testnet
 ```
