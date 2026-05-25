@@ -87,3 +87,7 @@ Recovering a Solana wallet using a seed phrase
 ```
 solana-keygen recover
 ```
+Set devnet.json as the default wallet:
+```
+solana config set --keypair ~/.config/solana/devnet.json
+```
