@@ -45,17 +45,15 @@ rustc --version && solana --version && anchor --version && surfpool --version &&
 
 ### 3️⃣ Solana config
 Your Solana config specifies the following variables:
-
-Config file: The path to your config file
-RPC URL & Websocket URL: The Solana cluster to which the CLI makes requests
-Keypair path: The path to the default Solana wallet (keypair) used to pay transaction fees and deploy programs. By default, this file is stored at ~/.config/solana/id.json.
+- Config file: The path to your config file
+- RPC URL & Websocket URL: The Solana cluster to which the CLI makes requests
+- Keypair path: The path to the default Solana wallet (keypair) used to pay transaction fees and deploy programs. By default, this file is stored at ~/.config/solana/id.json.
+- 
 To see your current configuration settings, enter the follow command in your terminal.
-
 ```
 solana config get
 ```
 A successful command will return output similar to the following:
-
 Example output
 ```
 Config File: /Users/test/.config/solana/cli/config.yml
