@@ -42,7 +42,7 @@ Install Rust
 ```
 apt install rustc
 ```
-Reboot the system to update the PATH environment variable.
+**Reboot the system to update the PATH environment variable.**
 
 Verify a successful installation by checking the version of each installed dependency.
 ```bash
