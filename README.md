@@ -118,3 +118,13 @@ To create a new token (mint account), run:
 spl-token create-token --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb --enable-metadata --decimals 8
 ```
 Default decimals: 9
+
+It is possible to see all extensions on a mint or token account:
+```
+spl-token display <account address>
+```
+See raw data:
+```
+solana account <account address>
+```
+This command fetches the low-level blockchain data for any address, displaying its SOL balance, data length, and the owner Program ID (such as the Token-2022 program)
