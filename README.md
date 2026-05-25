@@ -108,3 +108,13 @@ To check your wallet's SOL balance, run the following command:
 ```
 solana balance
 ```
+### 5️⃣ Create a New Token-2022
+Token-2022 Program Account Address:
+```
+TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+```
+To create a new token (mint account), run:
+```
+spl-token create-token --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb --enable-metadata --decimals 8
+```
+Default decimals: 9
