@@ -75,3 +75,15 @@ solana config set --url devnet
 solana config set --url localhost
 solana config set --url testnet
 ```
+### 4️⃣ Wallet setup
+To generate a keypair at the keypair path, run the following command:
+```
+solana-keygen new --word-count 24
+```
+This command will not override an existing account at the default location, unless you use the --force flag.
+**The generated this seed phrase is not saved by default!**
+
+Recovering a Solana wallet using a seed phrase
+```
+solana-keygen recover
+```
