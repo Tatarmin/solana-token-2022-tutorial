@@ -100,3 +100,7 @@ Check specific wallet file:
 ```
 solana-keygen pubkey ~/.config/solana/devnet.json
 ```
+Request an airdrop of Devnet SOL for testing:
+```
+solana airdrop 2
+```
