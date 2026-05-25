@@ -91,3 +91,12 @@ Set devnet.json as the default wallet:
 ```
 solana config set --keypair ~/.config/solana/devnet.json
 ```
+
+Check default wallet:
+```
+solana address
+```
+Check specific wallet file:
+```
+solana-keygen pubkey ~/.config/solana/devnet.json
+```
