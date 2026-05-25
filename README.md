@@ -104,3 +104,7 @@ Request an airdrop of Devnet SOL for testing:
 ```
 solana airdrop 2
 ```
+To check your wallet's SOL balance, run the following command:
+```
+solana balance
+```
