@@ -37,7 +37,7 @@ Anchor CLI: anchor-cli 0.32.1
 Surfpool CLI: surfpool 0.12.0
 Node.js: v24.10.0
 Yarn: 1.22.1
-```bash
+```
 
 Verify a successful installation by checking the version of each installed dependency.
 ```bash
