@@ -38,6 +38,12 @@ Surfpool CLI: surfpool 0.12.0
 Node.js: v24.10.0
 Yarn: 1.22.1
 ```
+Install Rust
+```
+apt install rustc
+```
+Reboot the system to update the PATH environment variable.
+
 Verify a successful installation by checking the version of each installed dependency.
 ```bash
 rustc --version && solana --version && anchor --version && surfpool --version && node --version && yarn --version
