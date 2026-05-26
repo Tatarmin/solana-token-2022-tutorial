@@ -206,3 +206,6 @@ Metadata update authority lets you change your Solana SPL Token name, symbol, lo
 ```
 spl-token authorize <TOKEN_ADDRESS> metadata --disable --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
 ```
+```
+spl-token authorize <TOKEN_ADDRESS> metadata-pointer --disable --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+```
