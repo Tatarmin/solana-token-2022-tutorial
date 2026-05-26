@@ -167,6 +167,13 @@ To send tokens from your wallet to another token account:
 ```
 spl-token transfer <TOKEN_ADDRESS> <TOKEN_AMOUNT> <RECIPIENT_ADDRESS>
 ```
+**Revoke Mint Authority (Disable Minting)**
+
+To permanently disable minting and lock the total supply, use the following command:
+```
+spl-token authorize <TOKEN_ADDRESS> mint --disable --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+```
+
 ### 6️⃣  Create Token Metadata
 The Token Extensions Program lets you store metadata directly on the Mint Account. 
 The metadata extension is only available for mint accounts created with Token-2022. 
@@ -191,10 +198,4 @@ spl-token update-metadata <TOKEN_ADDRESS> symbol "MTKN"
 ```
 ```
 spl-token update-metadata <TOKEN_ADDRESS> uri "https://gateway.pinata.cloud/ipfs/<NEW_FOLDER_CID>/metadata.json"
-```
-**Revoke Mint Authority (Disable Minting)**
-
-To permanently disable minting and lock the total supply, use the following command:
-```
-spl-token authorize <TOKEN_ADDRESS> mint --disable --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
 ```
