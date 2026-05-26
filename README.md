@@ -192,3 +192,9 @@ spl-token update-metadata <TOKEN_ADDRESS> symbol "MTKN"
 ```
 spl-token update-metadata <TOKEN_ADDRESS> uri "https://gateway.pinata.cloud/ipfs/<NEW_FOLDER_CID>/metadata.json"
 ```
+**Revoke Mint Authority (Disable Minting)**
+
+To permanently disable minting and lock the total supply, use the following command:
+```
+spl-token authorize <TOKEN_ADDRESS> mint --disable --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+```
