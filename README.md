@@ -167,3 +167,7 @@ To send tokens from your wallet to another token account:
 ```
 spl-token transfer <TOKEN_ADDRESS> <TOKEN_AMOUNT> <RECIPIENT_ADDRESS>
 ```
+### 6️⃣  Create Token Metadata
+The Token Extensions Program lets you store metadata directly on the Mint Account. 
+The metadata extension is only available for mint accounts created with Token-2022. 
+To create a token with the metadata extension, you must include the `--enable-metadata` flag.
