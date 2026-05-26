@@ -152,3 +152,12 @@ To mint tokens to a different token account:
 ```
 spl-token mint <TOKEN_ADDRESS> <TOKEN_AMOUNT> -- <RECIPIENT_TOKEN_ACCOUNT_ADDRESS> --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
 ```
+
+Check token supply:
+```
+spl-token supply <TOKEN_ADDRESS>
+```
+Check account balance:
+```
+spl-token supply <TOKEN_ADDRESS>
+```
