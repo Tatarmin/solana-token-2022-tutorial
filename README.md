@@ -161,3 +161,9 @@ Check account balance:
 ```
 spl-token supply <TOKEN_ADDRESS>
 ```
+**Transfer Tokens**
+
+To send tokens from your wallet to another token account:
+```
+spl-token transfer <TOKEN_ADDRESS> <TOKEN_AMOUNT> <RECIPIENT_ADDRESS>
+```
