@@ -199,3 +199,10 @@ spl-token update-metadata <TOKEN_ADDRESS> symbol "MTKN"
 ```
 spl-token update-metadata <TOKEN_ADDRESS> uri "https://gateway.pinata.cloud/ipfs/<NEW_FOLDER_CID>/metadata.json"
 ```
+
+**Revoke Metadata Update Authority**
+
+Metadata update authority lets you change your Solana SPL Token name, symbol, logo, description, and links. Revoking it makes that data permanent: no one can alter it again. That gives holders and listing sites confidence that the token identity won't change.
+```
+spl-token authorize <TOKEN_ADDRESS> metadata --disable --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+```
