@@ -130,7 +130,9 @@ solana account <ACCOUNT_ADDRESS>
 This command fetches the low-level blockchain data for any address, displaying its SOL balance, data length, and the owner Program ID (such as the Token-2022 program)
 
 **Create Token Account**
+
 A separate token account is required for each token (mint) in a wallet.
+
 Create a token account:
 ```
 spl-token create-account <TOKEN_ADDRESS> --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
