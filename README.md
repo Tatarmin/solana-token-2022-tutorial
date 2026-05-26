@@ -143,6 +143,7 @@ spl-token create-account <TOKEN_ADDRESS> --owner <OWNER_ADDRESS> --program-id To
 ```
 
 **Mint Tokens**
+
 To create new units of a token, mint tokens using the following command:
 ```
 spl-token mint <TOKEN_ADDRESS> <TOKEN_AMOUNT> --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuE
