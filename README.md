@@ -121,10 +121,21 @@ Default decimals: 9
 
 It is possible to see all extensions on a mint or token account:
 ```
-spl-token display <account address>
+spl-token display <ACCOUNT_ADDRESS>
 ```
 See raw data:
 ```
-solana account <account address>
+solana account <ACCOUNT_ADDRESS>
 ```
 This command fetches the low-level blockchain data for any address, displaying its SOL balance, data length, and the owner Program ID (such as the Token-2022 program)
+
+**Create Token Account**
+A separate token account is required for each token (mint) in a wallet.
+Create a token account:
+```
+spl-token create-account <TOKEN_ADDRESS> --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+```
+To create a token account with a different owner:
+```
+spl-token create-account <TOKEN_ADDRESS> --owner <OWNER_ADDRESS> --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+```
