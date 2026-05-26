@@ -178,17 +178,17 @@ spl-token initialize-metadata <TOKEN_ADDRESS> <YOUR_TOKEN_NAME> <YOUR_TOKEN_SYMB
 ```
 **Updating metadata**
 
-If the token mint was created using Token-2022 with the Metadata Extension, use the `spl-token initialize-metadata` command.
+If the token mint was created using Token-2022 with the Metadata Extension (which includes the --enable-metadata flag) and already initialized via the spl-token initialize-metadata command, use the spl-token update-metadata command to modify its fields:
 ```
 spl-token update-metadata <TOKEN_ADDRESS> <FIELD_NAME> <VALUE_STRING>
 ```
 # Examples
 ```
-spl-token update-metadata <TOKEN_ADDRESS> --name "MyToken"
+spl-token update-metadata <TOKEN_ADDRESS> name "MyToken"
 ```
 ```
-spl-token update-metadata <TOKEN_ADDRESS> --symbol "MTKN"
+spl-token update-metadata <TOKEN_ADDRESS> symbol "MTKN"
 ```
 ```
-spl-token update-metadata <TOKEN_ADDRESS> --uri "https://gateway.pinata.cloud/ipfs/<NEW_FOLDER_CID>/metadata.json"
+spl-token update-metadata <TOKEN_ADDRESS> uri "https://gateway.pinata.cloud/ipfs/<NEW_FOLDER_CID>/metadata.json"
 ```
