@@ -171,3 +171,8 @@ spl-token transfer <TOKEN_ADDRESS> <TOKEN_AMOUNT> <RECIPIENT_ADDRESS>
 The Token Extensions Program lets you store metadata directly on the Mint Account. 
 The metadata extension is only available for mint accounts created with Token-2022. 
 To create a token with the metadata extension, you must include the `--enable-metadata` flag.
+
+To initialize the metadata:
+```
+spl-token initialize-metadata <TOKEN_ADDRESS> <YOUR_TOKEN_NAME> <YOUR_TOKEN_SYMBOL> <YOUR_TOKEN_URI>
+```
