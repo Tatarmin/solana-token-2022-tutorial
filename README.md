@@ -182,7 +182,7 @@ If the token mint was created using Token-2022 with the Metadata Extension (whic
 ```
 spl-token update-metadata <TOKEN_ADDRESS> <FIELD_NAME> <VALUE_STRING>
 ```
-# Examples
+**Examples**
 ```
 spl-token update-metadata <TOKEN_ADDRESS> name "MyToken"
 ```
