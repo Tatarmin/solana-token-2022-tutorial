@@ -141,3 +141,13 @@ To create a token account with a different owner:
 ```
 spl-token create-account <TOKEN_ADDRESS> --owner <OWNER_ADDRESS> --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
 ```
+
+**Mint Tokens**
+To create new units of a token, mint tokens using the following command:
+```
+spl-token mint <TOKEN_ADDRESS> <TOKEN_AMOUNT> --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuE
+```
+To mint tokens to a different token account:
+```
+spl-token mint <TOKEN_ADDRESS> <TOKEN_AMOUNT> -- <RECIPIENT_TOKEN_ACCOUNT_ADDRESS> --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuE
+```
